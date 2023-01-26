@@ -1,0 +1,2 @@
+require("roadmanict")
+print("hello")
