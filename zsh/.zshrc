@@ -15,4 +15,6 @@ function update_env {
     brew update && brew upgrade
     zprezto-update
 
+    git -C ~/.config pull
+
 }
