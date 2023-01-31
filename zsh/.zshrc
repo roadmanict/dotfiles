@@ -11,3 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+function update_env {
+    brew update && brew upgrade
+    zprezto-update
+
+}
