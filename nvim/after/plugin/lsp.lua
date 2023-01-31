@@ -9,6 +9,11 @@ lsp.ensure_installed({
   'sumneko_lua',
   'spectral',
   'marksman',
+  'ansiblels',
+  'svelte',
+  'tailwindcss',
+  'dockerls',
+  'jdtls',
 })
 
 -- (Optional) Configure lua language server for neovim
