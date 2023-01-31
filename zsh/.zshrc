@@ -12,9 +12,16 @@ fi
 
 # Customize to your needs...
 function update_env {
+    echo ""
+    echo "Updating homebrew"
     brew update && brew upgrade
-    zprezto-update
 
+    echo ""
+    echo "Updating zprezto"
+    zprezto-update
+    
+    echo ""
+    echo "Update ~/.config"
     git -C ~/.config pull
 
 }
