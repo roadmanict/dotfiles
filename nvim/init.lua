@@ -1,2 +1,1 @@
 require("roadmanict")
-print("hello")
