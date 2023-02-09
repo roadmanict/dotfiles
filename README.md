@@ -4,6 +4,8 @@
 
 1. neovim
 2. tmux
+3. go (for efm-language-server)
+4. fzf
 
 ## Configure
 
