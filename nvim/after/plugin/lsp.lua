@@ -8,7 +8,7 @@ lsp.ensure_installed({
     'tsserver',
     'eslint',
     'sumneko_lua',
-    'spectral',
+    'yamlls',
     'marksman',
     'ansiblels',
     'svelte',
