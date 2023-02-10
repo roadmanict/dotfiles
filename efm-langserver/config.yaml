@@ -5,7 +5,8 @@ lint-debounce: 1s
 
 tools:
   javascript-prettier: &javascript-prettier
-    format-command: './node_modules/.bin/prettier ${INPUT}'
+    format-command: 'prettierd ${INPUT}'
+    format-stdin: true
 
 languages:
   typescript:
