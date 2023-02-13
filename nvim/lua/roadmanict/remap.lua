@@ -7,8 +7,10 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 --
 vim.keymap.set("n", "J", "mzJ`z")
+-- Up and down with centering
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+-- Search forward backward centering
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
