@@ -25,3 +25,5 @@ function update_env {
     git -C ~/.config pull
 
 }
+
+export JAVA_HOME=/usr/local/opt/openjdk
