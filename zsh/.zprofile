@@ -55,6 +55,15 @@ path=(
   $path
 )
 
+if [[ "$OSTYPE" == linux-* ]]; then
+  path=(
+    $HOME/{,s}bin(N)
+    /home/linuxbrew/.linuxbrew/{,s}bin(N)
+    /usr/local/{,s}bin(N)
+    $path
+  )
+fi
+
 #
 # Less
 #
