@@ -28,6 +28,9 @@ function update_env {
     echo "Update ~/.config"
     git -C ~/.config pull
 
+    echo ""
+    echo "Update nvim Packer"
+    nvim ~/.config/nvim/lua/roadmanict/packer.lua --headless -c 'autocmd User PackerComplete quitall' -c 'so' -c 'PackerSync'
 }
 
 export JAVA_HOME=/usr/local/opt/openjdk
