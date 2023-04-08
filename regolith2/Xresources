@@ -1,4 +1,4 @@
 regolith.look.path: /usr/share/regolith-look/default
 # set alt as modifier
-i3-wm.mod: mod1
-i3-wm.alt: Mod4
+# i3-wm.mod: mod1
+# i3-wm.alt: Mod4
