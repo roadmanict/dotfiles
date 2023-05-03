@@ -35,3 +35,4 @@ function update_env {
 
 export JAVA_HOME=/usr/local/opt/openjdk
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
+export HOMEBREW_BUNDLE_FILE=$XDG_CONFIG_HOME/.config/brew/Brewfile
