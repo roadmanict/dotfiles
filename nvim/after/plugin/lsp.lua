@@ -52,4 +52,11 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+-- outdated for lsp zero v2
+lsp.configure('jdtls', {
+    root_dir = function(fname)
+        return require('jdtls.setup').find_root({'.git', 'mvnw', 'gradlew'})
+    end
+})
+
 lsp.setup()
