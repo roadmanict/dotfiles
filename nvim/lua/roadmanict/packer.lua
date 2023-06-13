@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('ThePrimeagen/harpoon')
     use('ThePrimeagen/vim-be-good')
+    use 'mfussenegger/nvim-jdtls'
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
