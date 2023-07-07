@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
     use('ThePrimeagen/harpoon')
     use('ThePrimeagen/vim-be-good')
     use 'mfussenegger/nvim-jdtls'
+    use "m4xshen/hardtime.nvim"
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
