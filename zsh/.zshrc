@@ -17,6 +17,17 @@ fi
 # Customize to your needs...
 function update_env {
     echo ""
+    echo "Commit todo changes"
+    git -C ~/.config/todo add -A
+    git -C ~/.config/todo commit -m "Auto commit"
+    git -C ~/.config/todo push
+
+    echo ""
+    echo "Updating dotfile submodules"
+    git -C ~/.config submodule init
+    git -C ~/.config submodule update
+
+    echo ""
     echo "Updating homebrew"
     brew update && brew upgrade
 
