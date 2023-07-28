@@ -24,8 +24,7 @@ function update_env {
 
     echo ""
     echo "Updating dotfile submodules"
-    git -C ~/.config submodule init
-    git -C ~/.config submodule update
+    git -C ~/.config submodule update --init --recursive
 
     echo ""
     echo "Updating homebrew"
