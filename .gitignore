@@ -1,3 +1,11 @@
+**
+!alacritty
+!efm-langserver
+!git
+!todo
+!nvim
+!zsh
+!tmux
 .DS_STORE
 configstore
 wireshark
