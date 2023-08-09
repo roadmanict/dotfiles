@@ -14,16 +14,23 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-function update_env {
+function todo_sync {
     echo ""
     echo "Commit todo changes"
     git -C ~/.config/todo add -A
-    git -C ~/.config/todo commit -m "Auto commit"
+    git -C ~/.config/todo commit -m "Update todo"
+    git -C ~/.config/todo pull --rebase
     git -C ~/.config/todo push
 
+    git -C ~/.config add todo
+    git -C ~/.config commit -m "Update todo"
+    echo "Finished committing todo changes"
+}
+
+# Customize to your needs...
+function update_env {
     echo ""
-    echo "Updating dotfile submodules"
+    echo "Updating ./config submodules"
     git -C ~/.config submodule update --init --remote --rebase
 
     echo ""
