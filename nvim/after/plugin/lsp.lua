@@ -35,8 +35,16 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
---
+local lspconfig = require('lspconfig')
+lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
+lspconfig.yamlls.setup({
+    settings = { format = { enabled = true } }
+})
+lspconfig.efm.setup({
+    init_options = { documentFormatting = true },
+    filetypes = { 'yaml' }
+})
+
 -- I use nvim-jdtls for java lsp setup
 lsp.skip_server_setup({ 'jdtls' })
 

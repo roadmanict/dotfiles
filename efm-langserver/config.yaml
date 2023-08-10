@@ -9,7 +9,7 @@ tools:
     format-stdin: true
 
   javascript-prettier: &javascript-prettier
-    format-command: 'prettierd ${INPUT}'
+    format-command: "prettierd ${INPUT}"
     format-stdin: true
 
 languages:
