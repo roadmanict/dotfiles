@@ -38,7 +38,7 @@ end)
 local lspconfig = require('lspconfig')
 lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
 lspconfig.yamlls.setup({
-    settings = { format = { enabled = true } }
+    settings = { format = { enabled = false } }
 })
 lspconfig.efm.setup({
     init_options = { documentFormatting = true },
