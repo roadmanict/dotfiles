@@ -3,7 +3,7 @@
 !efm-langserver
 !git
 !todo
-!nvim
+!nvim/**
 !zsh
 !tmux
 .DS_STORE
