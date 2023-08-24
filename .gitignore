@@ -1,9 +1,10 @@
-**
+*
 !alacritty
 !efm-langserver
 !git
 !todo
-!nvim/**
+!/nvim/
+!/nvim/**/*
 !zsh
 !tmux
 .DS_STORE
