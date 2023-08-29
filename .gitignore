@@ -17,6 +17,9 @@
 .DS_STORE
 configstore
 wireshark
+nvim/lua/.luarc.json
 nvim/plugin/packer_compiled.lua
-zsh/.zsh_history
+zsh/.zcompcache/
 zsh/.zprezto
+zsh/.zsh_history
+
