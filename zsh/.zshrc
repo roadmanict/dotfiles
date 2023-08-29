@@ -48,8 +48,13 @@ function update_env {
     echo ""
     echo "Update nvim Packer"
     nvim ~/.config/nvim/lua/roadmanict/packer.lua --headless -c 'autocmd User PackerComplete quitall' -c 'so' -c 'PackerSync'
+
+    echo ""
+    echo "Update nvim Lazy"
+    NVIM_APPNAME=nvim-lazy nvim --headless "+Lazy! update" +qa
 }
 
 export JAVA_HOME=/usr/local/opt/openjdk
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 export HOMEBREW_BUNDLE_FILE=$XDG_CONFIG_HOME/.config/brew/Brewfile
+export NVIM_APPNAME=nvim-lazy
