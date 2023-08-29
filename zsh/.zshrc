@@ -47,7 +47,7 @@ function update_env {
 
     echo ""
     echo "Update nvim Packer"
-    nvim ~/.config/nvim/lua/roadmanict/packer.lua --headless -c 'autocmd User PackerComplete quitall' -c 'so' -c 'PackerSync'
+    NVIM_APPNAME=nvim nvim ~/.config/nvim/lua/roadmanict/packer.lua --headless -c 'autocmd User PackerComplete quitall' -c 'so' -c 'PackerSync'
 
     echo ""
     echo "Update nvim Lazy"
