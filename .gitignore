@@ -9,6 +9,8 @@
 !/todo/**/*
 !/nvim/
 !/nvim/**/*
+!/nvim-lazy/
+!/nvim-lazy/**/*
 !/zsh/
 !/zsh/**/*
 !/tmux/**/*
