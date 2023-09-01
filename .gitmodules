@@ -1,3 +1,6 @@
 [submodule "todo"]
 	path = todo
 	url = git@github.com:roadmanict/todo
+[submodule "transaction-parser"]
+	path = transaction-parser
+	url = git@github.com:roadmanict/transaction-parser-config.git

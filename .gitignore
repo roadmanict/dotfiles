@@ -11,6 +11,8 @@
 !/nvim/**/*
 !/nvim-lazy/
 !/nvim-lazy/**/*
+!/transaction-parser/
+!/transaction-parser/**/*
 !/zsh/
 !/zsh/**/*
 !/tmux/**/*
