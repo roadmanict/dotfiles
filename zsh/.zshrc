@@ -54,6 +54,10 @@ function update_env {
     NVIM_APPNAME=nvim-lazy nvim --headless "+Lazy! update" +qa
 }
 
+function parse_transactions {
+    date=$(date '+%Y-%m-%d'); for acc in persoonlijk persoonlijk_sparen gezamelijk gezamelijk_sparen; do cargo run -- -a $acc $1 > $date-$acc.csv; done
+}
+
 export JAVA_HOME=/usr/local/opt/openjdk
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 export HOMEBREW_BUNDLE_FILE=$XDG_CONFIG_HOME/.config/brew/Brewfile
