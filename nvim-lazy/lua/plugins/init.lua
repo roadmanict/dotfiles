@@ -5,7 +5,6 @@ return {
         branch = '0.1.x',
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
-    { 'rose-pine/neovim',                       name = 'rose-pine' },
     { "nvim-treesitter/nvim-treesitter",        build = ":TSUpdate" },
     { "nvim-treesitter/nvim-treesitter-context" },
     { "mbbill/undotree" },
