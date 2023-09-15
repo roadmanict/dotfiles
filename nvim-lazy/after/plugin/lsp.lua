@@ -11,7 +11,6 @@ lsp.ensure_installed({
     'yamlls',
     'marksman',
     'ansiblels',
-    'svelte',
     'tailwindcss',
     'dockerls',
     'jdtls',
