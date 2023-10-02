@@ -7,6 +7,7 @@
 3. go (for efm-language-server)
 4. fzf
 5. ripgrep (apt or homebrew)
+6. Tmux package manager https://github.com/tmux-plugins/tpm
 
 ## Configure
 
