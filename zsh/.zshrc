@@ -45,13 +45,13 @@ function update_env {
     echo "Update ~/.config"
     git -C ~/.config pull
 
-    echo ""
-    echo "Update nvim Packer"
-    NVIM_APPNAME=nvim nvim ~/.config/nvim/lua/roadmanict/packer.lua --headless -c 'autocmd User PackerComplete quitall' -c 'so' -c 'PackerSync'
+    # echo ""
+    # echo "Update nvim Packer"
+    # NVIM_APPNAME=nvim nvim ~/.config/nvim/lua/roadmanict/packer.lua --headless -c 'autocmd User PackerComplete quitall' -c 'so' -c 'PackerSync'
 
     echo ""
     echo "Update nvim Lazy"
-    NVIM_APPNAME=nvim-lazy nvim --headless "+Lazy! update" +qa
+    NVIM_APPNAME=nvim nvim --headless "+Lazy! update" +qa
 }
 
 function parse_transactions {
@@ -67,4 +67,3 @@ function jdk {
 export JAVA_HOME=/usr/local/opt/openjdk
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 export HOMEBREW_BUNDLE_FILE=$XDG_CONFIG_HOME/.config/brew/Brewfile
-export NVIM_APPNAME=nvim-lazy
