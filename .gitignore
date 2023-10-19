@@ -1,6 +1,8 @@
 *
 !/alacritty/
 !/alacritty/**/*
+!/brew/
+!/brew/**/*
 !/efm-langserver/
 !/efm-langserver/**/*
 !/git/

@@ -1,0 +1,59 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/cask-fonts": {
+        "revision": "f9fc73abc73aebfbc4937302988e333c00939ebe"
+      }
+    },
+    "cask": {
+      "font-fira-code-nerd-font": {
+        "version": "3.0.2",
+        "options": {
+          "full_name": "font-fira-code-nerd-font"
+        }
+      },
+      "alacritty": {
+        "version": "0.12.3",
+        "options": {
+          "full_name": "alacritty"
+        }
+      },
+      "librewolf": {
+        "version": "118.0.2,1",
+        "options": {
+          "full_name": "librewolf"
+        }
+      },
+      "1password": {
+        "version": "8.10.18",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "bruno": {
+        "version": "0.25.0",
+        "options": {
+          "full_name": "bruno"
+        }
+      },
+      "signal": {
+        "version": "6.34.1",
+        "options": {
+          "full_name": "signal"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.1.16",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.0.0.0.1.1694021235",
+        "Xcode": "15.0",
+        "macOS": "14.0"
+      }
+    }
+  }
+}
