@@ -19,6 +19,7 @@
 !/zsh/**/*
 !/tmux/**/*
 !Brewfile
+!Brewfile.lock.json
 .DS_STORE
 configstore
 wireshark
@@ -27,4 +28,5 @@ nvim/plugin/packer_compiled.lua
 zsh/.zcompcache/
 zsh/.zprezto
 zsh/.zsh_history
+zsh/.zsh_sessions
 
