@@ -13,6 +13,8 @@
 !/nvim-old/**/*
 !/transaction-parser/
 !/transaction-parser/**/*
+!/vpn/
+!/vpn/**/*
 !/zsh/
 !/zsh/**/*
 !/tmux/**/*
