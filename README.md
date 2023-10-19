@@ -13,6 +13,7 @@
 
 1. Checkout this repo in ~/.config
 2. Install zprezto with XDC_CONFIG_HOME options without the config copy
+3. Install Tmux Package manager: `https://github.com/tmux-plugins/tpm`
 
 ## Check for changes in zprezto Config
 
