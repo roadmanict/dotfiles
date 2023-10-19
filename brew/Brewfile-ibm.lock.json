@@ -1,0 +1,36 @@
+{
+  "entries": {
+    "cask": {
+      "slack": {
+        "version": "4.34.121",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "microsoft-teams": {
+        "version": "23247.720.2421.8365",
+        "options": {
+          "full_name": "microsoft-teams"
+        }
+      },
+      "intellij-idea-ce": {
+        "version": "2023.2.3,232.10072.27",
+        "options": {
+          "full_name": "intellij-idea-ce"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.1.16",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.0.0.0.1.1694021235",
+        "Xcode": "15.0",
+        "macOS": "14.0"
+      }
+    }
+  }
+}

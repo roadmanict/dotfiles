@@ -1,0 +1,3 @@
+cask "slack"
+cask "microsoft-teams"
+cask "intellij-idea-ce"
