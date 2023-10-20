@@ -3,8 +3,8 @@
 !/alacritty/**/*
 !/brew/
 !/brew/**/*
-brew/Brewfile
-brew/Brewfile.lock.json
+/brew/Brewfile
+/brew/Brewfile.lock.json
 !/efm-langserver/
 !/efm-langserver/**/*
 !/git/
@@ -22,8 +22,6 @@ brew/Brewfile.lock.json
 !/zsh/
 !/zsh/**/*
 !/tmux/**/*
-!Brewfile
-!Brewfile.lock.json
 .DS_STORE
 configstore
 wireshark
