@@ -4,6 +4,7 @@
 !/brew/
 !/brew/**/*
 brew/Brewfile
+brew/Brewfile.lock.json
 !/efm-langserver/
 !/efm-langserver/**/*
 !/git/
