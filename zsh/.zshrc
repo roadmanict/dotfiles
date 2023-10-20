@@ -14,6 +14,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+MACHINE="${MACHINE:-linux}"
+
 function todo_sync {
     echo ""
     echo "Commit todo changes"
@@ -29,6 +31,15 @@ function todo_sync {
 
 # Customize to your needs...
 function update_env {
+    echo ""
+    echo "Create Brewfile"
+    rm -f ~/.config/brew/Brewfile
+    cat ~/.config/brew/Brewfile-base > ~/.config/brew/Brewfile
+    if [ "$MACHINE" = "macbook-ibm" ]; then
+        cat ~/.config/brew/Brewfile-macos >> ~/.config/brew/Brewfile
+        cat ~/.config/brew/Brewfile-ibm >> ~/.config/brew/Brewfile
+    fi
+
     echo ""
     echo "Updating ./config submodules"
     git -C ~/.config submodule update --init --remote --rebase

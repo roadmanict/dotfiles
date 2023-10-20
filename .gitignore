@@ -3,6 +3,7 @@
 !/alacritty/**/*
 !/brew/
 !/brew/**/*
+brew/Brewfile
 !/efm-langserver/
 !/efm-langserver/**/*
 !/git/
