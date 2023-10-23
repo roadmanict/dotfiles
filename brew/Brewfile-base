@@ -7,4 +7,5 @@ brew "ripgrep"
 brew "node@18"
 brew "wireguard-tools"
 brew "openssh"
+brew "docker"
 
