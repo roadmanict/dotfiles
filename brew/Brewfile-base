@@ -4,7 +4,7 @@ brew "tmux"
 brew "zsh"
 brew "fzf"
 brew "ripgrep"
-brew "node@18"
+brew "node@20", link: true
 brew "wireguard-tools"
 brew "openssh"
 brew "docker"
