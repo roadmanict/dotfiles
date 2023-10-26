@@ -7,3 +7,6 @@
 [submodule "ssh"]
 	path = ssh
 	url = git@github.com:roadmanict/ssh-config.git
+[submodule "alacritty/rose-pine"]
+	path = alacritty/rose-pine
+	url = git@github.com:rose-pine/alacritty.git
