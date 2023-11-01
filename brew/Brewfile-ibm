@@ -1,4 +1,6 @@
 brew "awscli"
+brew "kubectl"
+brew "openfortivpn"
 
 cask "slack"
 cask "microsoft-teams"
