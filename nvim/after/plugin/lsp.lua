@@ -41,7 +41,7 @@ lspconfig.yamlls.setup({
 })
 lspconfig.efm.setup({
     init_options = { documentFormatting = true },
-    filetypes = { 'yaml' }
+    filetypes = { 'yaml', 'json' }
 })
 
 -- I use nvim-jdtls for java lsp setup

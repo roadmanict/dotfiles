@@ -4,8 +4,12 @@ root-markers:
 lint-debounce: 1s
 
 tools:
-  prettierd: &prettierd
-    format-command: prettierd ${INPUT} ${--range-start=charStart} ${--range-end=charEnd} ${--tab-width=tabSize} ${--use-tabs=!insertSpaces}
+  prettierd-yaml: &prettierd-yaml
+    format-command: prettierd ${INPUT} --parser yaml ${--range-start=charStart} ${--range-end=charEnd} ${--tab-width=tabSize} ${--use-tabs=!insertSpaces}
+    format-stdin: true
+
+  prettierd-json: &prettierd-json
+    format-command: "prettierd ${INPUT} --parser json ${--range-start=charStart} ${--range-end=charEnd} ${--tab-width=tabSize} ${--use-tabs=!insertSpaces}"
     format-stdin: true
 
   javascript-prettier: &javascript-prettier
@@ -18,4 +22,6 @@ languages:
   javascript:
     - <<: *javascript-prettier
   yaml:
-    - <<: *prettierd
+    - <<: *prettierd-yaml
+  json:
+    - <<: *prettierd-json
