@@ -68,7 +68,7 @@ function jdk {
     java -version
 }
 
-jdk 20 > /dev/null 2>&1
+jdk 21 > /dev/null 2>&1
 
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 export HOMEBREW_BUNDLE_FILE=$XDG_CONFIG_HOME/brew/Brewfile
