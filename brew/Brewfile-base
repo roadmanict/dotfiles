@@ -11,6 +11,8 @@ brew "wireguard-tools"
 brew "openssh"
 brew "docker"
 brew "colima" if OS.mac?
+brew "gnu-sed" if OS.mac?
+brew "findutils" if OS.mac?
 
 cask "font-fira-code-nerd-font" if OS.mac?
 cask "alacritty" if OS.mac?
