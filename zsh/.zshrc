@@ -75,3 +75,4 @@ export HOMEBREW_BUNDLE_FILE=$XDG_CONFIG_HOME/brew/Brewfile
 
 PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:/opt/homebrew/opt/findutils/libexec/gnubin:$PATH"
 
+alias lvim="NVIM_APPNAME=nvim-lsp nvim"

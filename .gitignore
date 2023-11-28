@@ -15,6 +15,8 @@
 !/nvim/**/*
 !/nvim-old/
 !/nvim-old/**/*
+!/nvim-lsp/
+!/nvim-lsp/**/*
 !/transaction-parser/
 !/transaction-parser/**/*
 !/vpn/
