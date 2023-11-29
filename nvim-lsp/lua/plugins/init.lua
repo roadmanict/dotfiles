@@ -1,7 +1,4 @@
 return {
-	  'tpope/vim-fugitive',
-  'tpope/vim-rhubarb',
-    'tpope/vim-sleuth',
     {
         'rose-pine/neovim',
         name = 'rose-pine',
@@ -9,8 +6,11 @@ return {
         priority = 1000,
         config = function()
             vim.opt.termguicolors = true
-            vim.cmd.colorscheme('rose-pine-moon')
+            vim.cmd([[colorscheme rose-pine-moon]])
         end
     },
 
+    'tpope/vim-fugitive',
+    'tpope/vim-rhubarb',
+    'tpope/vim-sleuth',
 }
