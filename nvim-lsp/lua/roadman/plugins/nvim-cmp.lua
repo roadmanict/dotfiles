@@ -10,7 +10,11 @@ return {
         "onsails/lspkind.nvim",         -- vs-code like pictograms
     },
     config = function()
-        local cmp = require('nvim-cmp');
+        local cmp = require('cmp');
+        
+        require('luasnip.loaders.from_vscode').lazy_load()
+
+        vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 
         cmp.setup({
             preselect = 'item',

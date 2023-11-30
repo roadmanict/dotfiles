@@ -4,11 +4,18 @@ return {
         cmd = "Mason",
         keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
         build = ":MasonUpdate",
+        dependencies = {
+            'mason-org/mason-registry',
+            -- Automatically install LSPs to stdpath for neovim
+            'williamboman/mason-lspconfig.nvim',
+        },
         opts = {
             ensure_installed = {},
         },
         config = function(_, opts)
             require("mason").setup(opts)
+            require("mason-lspconfig").setup();
+
             local mr = require("mason-registry")
             mr:on("package:install:success", function()
                 vim.defer_fn(function()
