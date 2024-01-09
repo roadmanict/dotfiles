@@ -2,18 +2,17 @@ return {
     { 'williamboman/mason.nvim' },
     {
         'williamboman/mason-lspconfig.nvim',
-        opts = {
-            ensure_installed = {
-                'tsserver',
-                'eslint',
+        opts = function(_, opts)
+            opts.ensure_installed = opts.ensure_installed or {}
+            vim.list_extend(opts.ensure_installed, {
                 'lua_ls',
                 'ansiblels',
                 'dockerls',
                 'jdtls',
                 'bashls',
                 'rust_analyzer',
-            }
-        }
+            })
+        end,
     },
     {
         'neovim/nvim-lspconfig',
@@ -24,6 +23,13 @@ return {
 
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
+                settings = {
+                    Lua = {
+                        diagnostics = {
+                            globals = { "vim" }
+                        }
+                    }
+                }
             })
             lspconfig.tsserver.setup({
                 capabilities = capabilities,
