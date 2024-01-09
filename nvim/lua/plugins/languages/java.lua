@@ -11,10 +11,13 @@ return {
         end,
     },
     {
-        "williamboman/mason.nvim",
+        'williamboman/mason.nvim',
+    },
+    {
+        'williamboman/mason-lspconfig.nvim',
         opts = function(_, opts)
             opts.ensure_installed = opts.ensure_installed or {}
-            vim.list_extend(opts.ensure_installed, { "jdtls", "java-test", "java-debug-adapter" })
+            vim.list_extend(opts.ensure_installed, { "jdtls" })
         end,
     }
 }
