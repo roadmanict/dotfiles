@@ -1,5 +1,12 @@
 return {
-    { 'williamboman/mason.nvim' },
+    {
+        'williamboman/mason.nvim',
+        config = function()
+            local mason = require("mason");
+
+            mason.setup()
+        end
+    },
     {
         'williamboman/mason-lspconfig.nvim',
         opts = function(_, opts)
