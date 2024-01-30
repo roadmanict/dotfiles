@@ -10,6 +10,7 @@ brew "node@20", link: true
 brew "wireguard-tools"
 brew "openssh"
 brew "docker"
+brew "lazygit"
 brew "colima" if OS.mac?
 brew "gnu-sed" if OS.mac?
 brew "findutils" if OS.mac?

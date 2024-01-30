@@ -21,7 +21,7 @@ return {
                 lua        = { "stylua" },
                 javascript = { { "prettierd", "prettier" } },
                 json       = { { "prettierd", "prettier" } },
-                java       = { { "google-java-format" } },
+                -- java       = { { "google-java-format" } },
                 typescript = { { "prettierd", "prettier" } },
                 yaml       = { { "prettierd", "prettier" } },
             },
