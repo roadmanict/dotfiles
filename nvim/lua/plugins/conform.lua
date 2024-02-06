@@ -18,9 +18,10 @@ return {
         opts = {
             -- Define your formatters
             formatters_by_ft = {
-                lua        = { "stylua" },
                 javascript = { { "prettierd", "prettier" } },
                 json       = { { "prettierd", "prettier" } },
+                lua        = { "stylua" },
+                markdown   = { { "prettierd", "prettier" } },
                 -- java       = { { "google-java-format" } },
                 typescript = { { "prettierd", "prettier" } },
                 yaml       = { { "prettierd", "prettier" } },

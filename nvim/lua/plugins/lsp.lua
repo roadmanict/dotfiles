@@ -44,6 +44,9 @@ return {
             lspconfig.eslint.setup({
                 capabilities = capabilities,
             })
+            lspconfig.rust_analyzer.setup({
+                capabilities = capabilities,
+            })
             lspconfig.terraformls.setup({
                 capabilities = capabilities,
             })
