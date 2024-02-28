@@ -1,6 +1,8 @@
 *
 !/alacritty/
 !/alacritty/**/*
+!/bin/
+!/bin/**/*
 !/brew/
 !/brew/**/*
 /brew/Brewfile
