@@ -10,3 +10,12 @@
 [submodule "alacritty/rose-pine"]
 	path = alacritty/rose-pine
 	url = git@github.com:rose-pine/alacritty.git
+[submodule "tmux/plugins/tmux"]
+	path = tmux/plugins/tmux
+	url = https://git::@github.com/rose-pine/tmux
+[submodule "tmux/plugins/tmux-sensible"]
+	path = tmux/plugins/tmux-sensible
+	url = https://git::@github.com/tmux-plugins/tmux-sensible
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://git::@github.com/tmux-plugins/tpm

@@ -23,6 +23,7 @@
 !/vpn/**/*
 !/zsh/
 !/zsh/**/*
+!/tmux/
 !/tmux/**/*
 .DS_STORE
 configstore
