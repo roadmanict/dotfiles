@@ -11,3 +11,5 @@
 [includeIf "gitdir/i:~/.config/"]
     path = ~/.config/git/config-personal.inc
 
+[pull]
+	rebase = true
