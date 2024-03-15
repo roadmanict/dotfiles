@@ -1,4 +1,5 @@
 tap "homebrew/cask-fonts" if OS.mac?
+tap "homebrew/cask-versions" if OS.mac?
 
 brew "git"
 brew "zsh"
