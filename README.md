@@ -15,10 +15,10 @@
 2. Install zprezto with XDC_CONFIG_HOME options without the config copy
 3. Install Homebrew
 4. Install Homebrew packages `brew bundle`
-3. Install Tmux Package manager: `https://github.com/tmux-plugins/tpm`
-4. (OSX) Configure brew zsh as shell: `sudo dscl . -create /Users/geert UserShell /opt/homebrew/bin/zsh`
-5. Add `Include ~/.config/ssh/*` to the top of ~/.ssh/config
-6. (Linux) Install FyroCode mono in ~/.local/share/fonts
+5. (OSX) Configure brew zsh as shell: `sudo dscl . -create /Users/geert UserShell /opt/homebrew/bin/zsh`
+6. Add `Include ~/.config/ssh/*` to the top of ~/.ssh/config
+7. (Linux) Install FyroCode mono in ~/.local/share/fonts
+8. Requires a ssh key per git config
 
 ## Check for changes in zprezto Config
 
