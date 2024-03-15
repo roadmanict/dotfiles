@@ -10,8 +10,6 @@
     path = ~/.config/git/config-personal.inc
 [includeIf "gitdir/i:~/.config/"]
     path = ~/.config/git/config-personal.inc
-[includeIf "gitdir/i:~/.config/.git"]
-    path = ~/.config/git/config-personal.inc
 
 [pull]
 	rebase = true
