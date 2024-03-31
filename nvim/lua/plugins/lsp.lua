@@ -50,6 +50,9 @@ return {
             lspconfig.terraformls.setup({
                 capabilities = capabilities,
             })
+            lspconfig.ansiblels.setup({
+                capabilities = capabilities,
+            })
 
             vim.api.nvim_create_autocmd('lspattach', {
                 group = vim.api.nvim_create_augroup('userlspconfig', {}),
