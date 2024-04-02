@@ -13,9 +13,7 @@ return {
             opts.ensure_installed = opts.ensure_installed or {}
             vim.list_extend(opts.ensure_installed, {
                 'lua_ls',
-                'ansiblels',
                 'dockerls',
-                'jdtls',
                 'bashls',
                 'rust_analyzer',
             })
@@ -45,12 +43,6 @@ return {
                 capabilities = capabilities,
             })
             lspconfig.rust_analyzer.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.terraformls.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.ansiblels.setup({
                 capabilities = capabilities,
             })
 

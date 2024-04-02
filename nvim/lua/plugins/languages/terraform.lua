@@ -3,14 +3,14 @@ return {
         "nvim-treesitter/nvim-treesitter",
         opts = function(_, opts)
             opts.ensure_installed = opts.ensure_installed or {}
-            vim.list_extend(opts.ensure_installed, { "yaml" })
+            vim.list_extend(opts.ensure_installed, { "hcl" })
         end,
     },
     {
         'williamboman/mason-lspconfig.nvim',
         opts = function(_, opts)
             opts.ensure_installed = opts.ensure_installed or {}
-            vim.list_extend(opts.ensure_installed, { "ansiblels" })
+            vim.list_extend(opts.ensure_installed, { "terraformls" })
         end,
     },
     {
@@ -18,9 +18,9 @@ return {
         config = function()
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-            local lspconfig = require("ansiblels")
+            local lspconfig = require('lspconfig')
 
-            lspconfig.ansiblels.setup({
+            lspconfig.terraformls.setup({
                 capabilities = capabilities,
             })
         end

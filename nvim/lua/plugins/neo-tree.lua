@@ -9,7 +9,7 @@ return {
             -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
         },
         keys = {
-            { "<leader>pv", "<cmd>Neotree filesystem toggle left<CR>", desc = "NeoTree" },
+            { "<leader>pv", "<cmd>Neotree filesystem focus left<CR>", desc = "NeoTree" },
         },
     }
 }
