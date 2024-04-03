@@ -15,14 +15,8 @@ return {
     },
     {
         'neovim/nvim-lspconfig',
-        config = function()
-            local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-            local lspconfig = require("ansiblels")
-
-            lspconfig.ansiblels.setup({
-                capabilities = capabilities,
-            })
-        end
+        opts = {
+            servers = { ansiblels = {}},
+        },
     },
 }

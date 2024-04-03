@@ -21,30 +21,34 @@ return {
     },
     {
         'neovim/nvim-lspconfig',
-        config = function()
+        opts = {
+            servers = {
+                lua_ls = {
+                    settings = {
+                        Lua = {
+                            diagnostics = {
+                                globals = { "vim" }
+                            }
+                        }
+                    }
+
+                },
+                rust_analyzer = {},
+            }
+        },
+        config = function(_, opts)
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
             local lspconfig = require('lspconfig')
 
-            lspconfig.lua_ls.setup({
-                capabilities = capabilities,
-                settings = {
-                    Lua = {
-                        diagnostics = {
-                            globals = { "vim" }
-                        }
-                    }
-                }
-            })
-            lspconfig.tsserver.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.eslint.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.rust_analyzer.setup({
-                capabilities = capabilities,
-            })
+            for server, server_opts in pairs(opts.servers) do
+                server_opts = vim.tbl_deep_extend("force", {
+                    capabilities = vim.deepcopy(capabilities),
+                }, server_opts or {})
+
+                lspconfig[server].setup(server_opts);
+            end
+
 
             vim.api.nvim_create_autocmd('lspattach', {
                 group = vim.api.nvim_create_augroup('userlspconfig', {}),
