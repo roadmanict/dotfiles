@@ -11,5 +11,19 @@ return {
         keys = {
             { "<leader>pv", "<cmd>Neotree filesystem focus left<CR>", desc = "NeoTree" },
         },
+        opts = {
+            window = {
+                mappings = {
+                    ["%"] = {
+                        "add",
+                        -- some commands may take optional config options, see `:h neo-tree-mappings` for details
+                        config = {
+                            show_path = "none", -- "none", "relative", "absolute"
+                        }
+                    },
+                    ["d"] = { "add_directory" }
+                }
+            }
+        }
     }
 }

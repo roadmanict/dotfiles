@@ -12,7 +12,7 @@ return {
                 "vim",
                 "vimdoc",
                 "bash",
-                "rust" },
+            },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
             sync_install = false,
