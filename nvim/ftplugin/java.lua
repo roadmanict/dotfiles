@@ -17,6 +17,7 @@ local config = {
     cmd = { 'jdtls', get_jdtls_jvm_args(), },
     root_dir = vim.fs.dirname(vim.fs.find({ 'gradlew', '.git', 'mvnw' }, { upward = true })[1]),
     on_attach = function(client, bufnr)
+        client.server_capabilities.semanticTokensProvider = nil
         local opts = { buffer = bufnr, remap = false }
 
         vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
