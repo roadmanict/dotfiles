@@ -51,6 +51,7 @@ return {
             vim.api.nvim_create_autocmd('lspattach', {
                 group = vim.api.nvim_create_augroup('userlspconfig', {}),
                 callback = function(ev)
+                    -- Disable lsp highlighting in favor of treesitter
                     local client = vim.lsp.get_client_by_id(ev.data.client_id)
                     client.server_capabilities.semanticTokensProvider = nil
 
