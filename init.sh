@@ -34,8 +34,7 @@ if [ "$system" = "Linux" ]; then
         ssh-keyscan github.com >> ~/.ssh/known_hosts
 
         mkdir -p ~/Projects/Personal
-
-        git clone git@github.com:roadmanict/dotfiles ~/Projects/Personal/dotfiles
+        git clone git@github.com:roadmanict/dotfiles.git ~/Projects/Personal/dotfiles
 
 EOF
 fi
