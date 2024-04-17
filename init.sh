@@ -27,7 +27,14 @@ if [ "$system" = "Linux" ]; then
     usermod -aG sudo $sudo_user
 
     sudo -i -u $sudo_user bash << EOF
+        mkdir ~/.ssh
+        chmod 700 ~/.ssh
+        touch ~/.ssh/known_hosts
+        chmod 600 ~/.ssh/known_hosts
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
         mkdir -p ~/Projects/Personal
+
         git clone git@github.com:roadmanict/dotfiles ~/Projects/Personal/dotfiles
 
 EOF
