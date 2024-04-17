@@ -33,7 +33,6 @@ wireshark
 nvim/lua/.luarc.json
 nvim/plugin/packer_compiled.lua
 zsh/.zcompcache/
-zsh/.zprezto
 zsh/.zsh_history
 zsh/.zsh_sessions
 !init.sh

@@ -22,6 +22,7 @@ if [ "$system" = "Linux" ]; then
     apt install -y \
         git \
         sudo \
+        zsh \
         pipx
 
     usermod -aG sudo $sudo_user
@@ -37,10 +38,12 @@ if [ "$system" = "Linux" ]; then
 
         if [ ! -d ~/Projects/Personal/dotfiles ]; then
             mkdir -p ~/Projects/Personal
-            git clone --recurse-submodules https://github.com/roadmanict/dotfiles.git ~/Projects/Personal/dotfiles
+            git clone https://github.com/roadmanict/dotfiles.git ~/Projects/Personal/dotfiles
             git -C ~/Projects/Personal/dotfiles remote remove origin
             git -C ~/Projects/Personal/dotfiles remote add origin git@github.com:roadmanict/dotfiles.git
         fi
+
+        sudo chsh -s /bin/zsh geert
 EOF
 fi
 
