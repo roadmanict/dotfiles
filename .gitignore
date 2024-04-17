@@ -36,4 +36,5 @@ zsh/.zcompcache/
 zsh/.zprezto
 zsh/.zsh_history
 zsh/.zsh_sessions
+!init.sh
 
