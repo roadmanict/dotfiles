@@ -28,3 +28,7 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   cp "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 ```
+
+## Setup linux
+
+1. Run init.sh as root `wget -q -O - https://raw.githubusercontent.com/roadmanict/dotfiles/main/init.sh | bash`
