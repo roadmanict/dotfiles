@@ -14,7 +14,6 @@ fi
 echo "Operating System: $system"
 
 if [ "$system" = "Linux" ]; then
-    echo "Enter Your Name: "
     read -p "Enter your regular account name: " sudo_user </dev/tty
 
     apt update
@@ -22,7 +21,15 @@ if [ "$system" = "Linux" ]; then
 
     apt install -y \
         git \
-        sudo
+        sudo \
+        pipx
+
     usermod -aG sudo $sudo_user
+
+    sudo -i -u $sudo_user bash << EOF
+        mkdir -p ~/Projects/Personal
+        git clone git@github.com:roadmanict/dotfiles ~/Projects/Personal/dotfiles
+
+EOF
 fi
 
