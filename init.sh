@@ -27,15 +27,20 @@ if [ "$system" = "Linux" ]; then
     usermod -aG sudo $sudo_user
 
     sudo -i -u $sudo_user bash << EOF
-        mkdir ~/.ssh
-        chmod 700 ~/.ssh
-        touch ~/.ssh/known_hosts
-        chmod 600 ~/.ssh/known_hosts
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        if [ ! -f ~/.ssh/known_hosts ]; then
+            mkdir ~/.ssh
+            chmod 700 ~/.ssh
+            touch ~/.ssh/known_hosts
+            chmod 600 ~/.ssh/known_hosts
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+        fi
 
-        mkdir -p ~/Projects/Personal
-        git clone git@github.com:roadmanict/dotfiles.git ~/Projects/Personal/dotfiles
-
+        if [ ! -d ~/Projects/Personal/dotfiles ]; then
+            mkdir -p ~/Projects/Personal
+            git clone --recurse-submodules https://github.com/roadmanict/dotfiles.git ~/Projects/Personal/dotfiles
+            git -C ~/Projects/Personal/dotfiles remote remove origin
+            git -C ~/Projects/Personal/dotfiles remote add origin git@github.com:roadmanict/dotfiles.git
+        fi
 EOF
 fi
 
