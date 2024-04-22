@@ -1,7 +1,5 @@
 #
 # Executes commands at login pre-zshrc.
-#
-# Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
@@ -50,7 +48,11 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   $HOME/{,s}bin(N)
+  $HOME/.local/{,s}bin(N)
+  $HOME/.local/scripts
   /opt/{homebrew,local}/{,s}bin(N)
+  /opt/homebrew/opt/gnu-sed/libexec/gnubin
+  /opt/homebrew/opt/findutils/libexec/gnubin
   /usr/local/{,s}bin(N)
   $path
 )
