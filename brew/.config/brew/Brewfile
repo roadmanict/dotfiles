@@ -1,0 +1,24 @@
+tap "homebrew/cask-fonts" if OS.mac?
+tap "homebrew/cask-versions" if OS.mac?
+
+brew "git"
+brew "zsh"
+brew "tmux"
+brew "zsh"
+brew "fzf"
+brew "ripgrep"
+brew "node@20", link: true
+brew "wireguard-tools"
+brew "openssh"
+brew "docker"
+brew "lazygit"
+brew "colima" if OS.mac?
+brew "gnu-sed" if OS.mac?
+brew "findutils" if OS.mac?
+
+cask "font-fira-code-nerd-font" if OS.mac?
+cask "alacritty" if OS.mac?
+cask "librewolf" if OS.mac?
+cask "1password" if OS.mac?
+cask "bruno" if OS.mac?
+cask "signal" if OS.mac?
