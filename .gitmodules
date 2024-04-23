@@ -16,3 +16,6 @@
 [submodule "zsh/.zprezto"]
 	path = zsh/.config/zsh/.zprezto
 	url = git@github.com:sorin-ionescu/prezto.git
+[submodule "wireguard"]
+	path = wireguard
+	url = git@github.com:roadmanict/wireguard-conf.git
