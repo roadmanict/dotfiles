@@ -1,4 +1,4 @@
-import = ["/Users/geert/.config/alacritty/rose-pine/dist/rose-pine-moon.toml"]
+import = ["~/.config/alacritty/rose-pine/dist/rose-pine-moon.toml"]
 
 [env]
 TERM = "xterm-256color"

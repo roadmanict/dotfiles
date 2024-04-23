@@ -43,7 +43,7 @@ if [ "$system" = "Linux" ]; then
             git -C ~/Projects/Personal/dotfiles remote add origin git@github.com:roadmanict/dotfiles.git
         fi
 
-        sudo chsh -s /bin/zsh geert
+        sudo chsh -s /bin/zsh $sudo_user
 EOF
 fi
 
