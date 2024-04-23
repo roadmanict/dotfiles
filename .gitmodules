@@ -8,7 +8,7 @@
 	path = ssh
 	url = git@github.com:roadmanict/ssh-config.git
 [submodule "alacritty/rose-pine"]
-	path = alacritty/rose-pine
+	path = alacritty/.config/alacritty/rose-pine
 	url = git@github.com:rose-pine/alacritty.git
 [submodule "tmux/plugins/tmux"]
 	path = tmux/plugins/tmux
