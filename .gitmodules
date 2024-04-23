@@ -1,24 +1,18 @@
-[submodule "todo"]
-	path = todo
-	url = git@github.com:roadmanict/todo
-[submodule "transaction-parser"]
-	path = transaction-parser
-	url = git@github.com:roadmanict/transaction-parser-config.git
 [submodule "ssh"]
-	path = ssh
+	path = ssh/.config/ssh
 	url = git@github.com:roadmanict/ssh-config.git
 [submodule "alacritty/rose-pine"]
 	path = alacritty/.config/alacritty/rose-pine
 	url = git@github.com:rose-pine/alacritty.git
 [submodule "tmux/plugins/tmux"]
-	path = tmux/plugins/tmux
+	path = tmux/.config/tmux/plugins/tmux
 	url = https://git::@github.com/rose-pine/tmux
 [submodule "tmux/plugins/tmux-sensible"]
-	path = tmux/plugins/tmux-sensible
+	path = tmux/.config/tmux/plugins/tmux-sensible
 	url = https://git::@github.com/tmux-plugins/tmux-sensible
 [submodule "tmux/plugins/tpm"]
-	path = tmux/plugins/tpm
+	path = tmux/.config/tmux/plugins/tpm
 	url = https://git::@github.com/tmux-plugins/tpm
 [submodule "zsh/.zprezto"]
-	path = zsh/.zprezto
+	path = zsh/.config/zsh/.zprezto
 	url = git@github.com:sorin-ionescu/prezto.git
