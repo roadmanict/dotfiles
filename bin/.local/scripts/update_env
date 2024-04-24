@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+echo ""
+echo "Updating dotfiles"
+git -C ~/Projects/Personal/dotfiles pull
+echo ""
+echo "Updating dotfiles submodules"
+git -C ~/Projects/Personal/dotfiles submodule update --init --recursive --rebase
+
+echo ""
+echo "Updating homebrew"
+brew update && brew upgrade
+
+echo ""
+echo "Updating zprezto"
+zprezto-update
+
+echo ""
+echo "Update nvim Lazy"
+NVIM_APPNAME=nvim nvim --headless "+Lazy! update" +qa
