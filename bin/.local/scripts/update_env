@@ -13,6 +13,12 @@ if [ "$DOTFILES_OS" = "Macos" ]; then
     echo "Updating homebrew"
     brew update && brew upgrade
 fi
+if [ "$DOTFILES_OS" = "Linux" ]; then
+    echo ""
+    echo "Updating apt"
+    sudo apt update && sudo apt full-upgrade -y
+fi
+
 
 echo ""
 echo "Update nvim Lazy"
