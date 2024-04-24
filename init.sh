@@ -23,6 +23,7 @@ if [ "$system" = "Linux" ]; then
         git \
         sudo \
         zsh \
+        stow \
         pipx
 
     usermod -aG sudo $sudo_user

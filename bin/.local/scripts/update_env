@@ -3,18 +3,16 @@ set -e
 
 echo ""
 echo "Updating dotfiles"
-git -C ~/Projects/Personal/dotfiles pull
+git -C ~/Projects/Personal/dotfiles pull --rebase
 echo ""
 echo "Updating dotfiles submodules"
 git -C ~/Projects/Personal/dotfiles submodule update --init --recursive --rebase
 
-echo ""
-echo "Updating homebrew"
-brew update && brew upgrade
-
-echo ""
-echo "Updating zprezto"
-zprezto-update
+if [ "$DOTFILES_OS" = "Macos" ]; then
+    echo ""
+    echo "Updating homebrew"
+    brew update && brew upgrade
+fi
 
 echo ""
 echo "Update nvim Lazy"

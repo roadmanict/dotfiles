@@ -39,6 +39,7 @@ return {
 						},
 					},
 				},
+				bashls = {},
 			},
 		},
 		config = function(_, opts)
