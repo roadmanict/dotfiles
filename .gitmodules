@@ -19,3 +19,6 @@
 [submodule "wireguard"]
 	path = wireguard
 	url = git@github.com:roadmanict/wireguard-conf.git
+[submodule "transaction-parser"]
+	path = transaction-parser/.config/transaction-parser
+	url = git@github.com:roadmanict/transaction-parser-config.git
