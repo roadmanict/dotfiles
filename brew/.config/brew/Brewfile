@@ -1,17 +1,14 @@
 tap "homebrew/cask-fonts" if OS.mac?
 tap "homebrew/cask-versions" if OS.mac?
 
-brew "git"
-brew "zsh"
-brew "tmux"
-brew "zsh"
-brew "fzf"
-brew "ripgrep"
+brew "tmux" if OS.mac?
+brew "fzf" if OS.mac?
+brew "ripgrep" if OS.mac?
 brew "node@20", link: true
-brew "wireguard-tools"
-brew "openssh"
+brew "wireguard-tools" if OS.mac?
 brew "docker"
 brew "lazygit"
+brew "nvim"
 brew "colima" if OS.mac?
 brew "gnu-sed" if OS.mac?
 brew "findutils" if OS.mac?

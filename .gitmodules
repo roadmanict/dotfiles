@@ -22,3 +22,6 @@
 [submodule "transaction-parser"]
 	path = transaction-parser/.config/transaction-parser
 	url = git@github.com:roadmanict/transaction-parser-config.git
+[submodule "i3/.config/i3/rose-pine"]
+	path = i3/.config/i3/rose-pine
+	url = git@github.com:rose-pine/i3.git

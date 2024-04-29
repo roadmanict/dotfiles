@@ -1,2 +1,2 @@
 #!/bin/sh
-stow -R -t ~ alacritty bin brew git ideavim nvim tmux zsh
+stow -R -t ~ alacritty bin brew fonts git i3 ideavim nvim tmux zsh

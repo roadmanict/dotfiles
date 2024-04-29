@@ -24,6 +24,10 @@ if [ "$system" = "Linux" ]; then
         sudo \
         zsh \
         stow \
+        tmux \
+        alacritty \
+        fzf \
+        ripgrep \
         pipx
 
     usermod -aG sudo $sudo_user
@@ -45,6 +49,10 @@ if [ "$system" = "Linux" ]; then
         fi
 
         sudo chsh -s /bin/zsh $sudo_user
+
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+        exit
 EOF
 fi
 
