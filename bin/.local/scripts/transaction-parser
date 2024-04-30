@@ -1,0 +1,11 @@
+#!/bin/sh
+current_dir=$(pwd);
+date=$(date '+%Y-%m-%d'); 
+
+pushd ~/Projects/Personal/rs-ynab-importer;
+
+for acc in persoonlijk persoonlijk_sparen gezamelijk gezamelijk_sparen; do 
+    cargo run -- -a $acc $current_dir/$1 > $current_dir/$date-$acc.csv; 
+done
+
+popd;
