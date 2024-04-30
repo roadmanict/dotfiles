@@ -28,6 +28,7 @@ if [ "$system" = "Linux" ]; then
         alacritty \
         fzf \
         ripgrep \
+        wireguard-tools \
         pipx
 
     usermod -aG sudo $sudo_user
@@ -53,6 +54,8 @@ if [ "$system" = "Linux" ]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+        pipx install --include-deps ansible
 
         exit
 EOF
