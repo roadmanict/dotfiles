@@ -54,10 +54,26 @@ if [ "$system" = "Linux" ]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
-        pipx install --include-deps ansible
-
         exit
 EOF
 fi
 
+if [ "$system" = "Macos" ]; then
+        if [ ! -d ~/Projects/Personal/dotfiles ]; then
+            mkdir -p ~/Projects/Personal
+            git clone https://github.com/roadmanict/dotfiles.git ~/Projects/Personal/dotfiles
+            git -C ~/Projects/Personal/dotfiles remote remove origin
+            git -C ~/Projects/Personal/dotfiles remote add origin git@github.com:roadmanict/dotfiles.git
+        fi
+
+        if [ ! -d /opt/homebrew ]; then
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	fi
+	export PATH="/opt/homebrew/bin:$PATH"
+	
+	brew install stow
+
+	~/Projects/Personal/dotfiles/stow.sh
+
+	brew bundle
+fi
