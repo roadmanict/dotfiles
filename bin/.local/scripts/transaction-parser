@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 current_dir=$(pwd);
 date=$(date '+%Y-%m-%d'); 
 
