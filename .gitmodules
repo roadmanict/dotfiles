@@ -25,3 +25,6 @@
 [submodule "i3/.config/i3/rose-pine"]
 	path = i3/.config/i3/rose-pine
 	url = git@github.com:rose-pine/i3.git
+[submodule "tmux/.config/tmux/plugins/vim-tmux-navigator"]
+	path = tmux/.config/tmux/plugins/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
