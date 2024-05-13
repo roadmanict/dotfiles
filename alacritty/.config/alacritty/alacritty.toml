@@ -10,5 +10,4 @@ size = 15.0
 family = "FiraCode Nerd Font Mono"
 
 [window]
-decorations = "none"
 startup_mode = "Maximized"

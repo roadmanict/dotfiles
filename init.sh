@@ -70,10 +70,12 @@ if [ "$system" = "Macos" ]; then
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	fi
 	export PATH="/opt/homebrew/bin:$PATH"
+
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 	
 	brew install stow
 
 	~/Projects/Personal/dotfiles/stow.sh
 
-	brew bundle
+	brew bundle --file brew/Brewfile
 fi
