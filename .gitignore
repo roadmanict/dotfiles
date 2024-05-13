@@ -2,3 +2,4 @@ zsh/.config/zsh/.zsh_history
 Brewfile.lock
 brew/Brewfile.lock.json
 zsh/.config/zsh/.zsh_sessions
+.DS_Store
