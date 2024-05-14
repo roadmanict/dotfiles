@@ -25,4 +25,4 @@ jdk 22 > /dev/null 2>&1
 
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 
-alias lvim="NVIM_APPNAME=nvim-lsp nvim"
+eval "$(fzf --zsh)"
