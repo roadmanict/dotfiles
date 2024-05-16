@@ -3,3 +3,4 @@ Brewfile.lock
 brew/Brewfile.lock.json
 zsh/.config/zsh/.zsh_sessions
 .DS_Store
+nvim/.config/nvim/lazy-lock.json
