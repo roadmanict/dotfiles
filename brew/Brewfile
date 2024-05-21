@@ -6,6 +6,7 @@ brew "ripgrep" if OS.mac?
 brew "node@20", link: true
 brew "wireguard-tools" if OS.mac?
 brew "docker" if OS.mac?
+brew "docker-compose" if OS.mac?
 brew "lazygit"
 brew "nvim"
 brew "ansible"
