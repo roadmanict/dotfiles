@@ -4,11 +4,7 @@
 [user]
 	name = Geert Weggemans
 
-[includeIf "gitdir/i:~/Projects/Jumbo/"]
-    path = ~/.config/git/config-jumbo.inc
-[includeIf "gitdir/i:~/Projects/Personal/"]
-    path = ~/.config/git/config-personal.inc
-[includeIf "gitdir/i:~/.config/"]
+[includeIf "gitdir/i:~/Projects/"]
     path = ~/.config/git/config-personal.inc
 
 [pull]
