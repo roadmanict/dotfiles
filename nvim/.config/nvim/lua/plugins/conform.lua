@@ -18,6 +18,7 @@ return {
 		opts = {
 			-- Define your formatters
 			formatters_by_ft = {
+				html = { { "prettierd", "prettier" } },
 				javascript = { { "prettierd", "prettier" } },
 				json = { { "prettierd", "prettier" } },
 				lua = { "stylua" },
