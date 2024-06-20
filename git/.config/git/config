@@ -1,11 +1,15 @@
 [push]
     autoSetupRemote = true
 
+[pull]
+	rebase = true
+
 [user]
 	name = Geert Weggemans
 
 [includeIf "gitdir/i:~/Projects/"]
     path = ~/.config/git/config-personal.inc
 
-[pull]
-	rebase = true
+[includeIf "gitdir/i:~/Projects/NewNexus/"]
+    path = ~/.config/git/config-newnexus.inc
+
