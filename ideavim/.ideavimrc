@@ -32,6 +32,7 @@ imap <C-y> <Action>(EditorChooseLookupItem)
 nmap <C-p> <Action>(SearchEverywhere)
 nmap <leader>ps <Action>(FindInPath)
 nmap <leader>vca <Action>(ShowIntentionActions)
+nmap <leader>vrn <Action>(RenameElement)
 nmap ]d <Action>(GotoNextError)
 nmap [d <Action>(GotoPreviousError)
 "" Map <leader>d to start debug
