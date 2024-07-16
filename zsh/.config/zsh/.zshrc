@@ -26,3 +26,4 @@ jdk 22 > /dev/null 2>&1
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 
 eval "$(fzf --zsh)"
+eval "$(hugo completion zsh)"

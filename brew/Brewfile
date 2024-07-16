@@ -11,6 +11,7 @@ brew "lazygit"
 brew "nvim"
 brew "ansible"
 brew "ansible-lint"
+brew "hugo"
 brew "colima" if OS.mac?
 brew "gnu-sed" if OS.mac?
 brew "findutils" if OS.mac?
