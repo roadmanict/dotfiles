@@ -24,6 +24,7 @@ return {
 				lua = { "stylua" },
 				markdown = { { "prettierd", "prettier" } },
 				-- java       = { { "google-java-format" } },
+				toml = { "taplo" },
 				typescript = { { "prettierd", "prettier" } },
 				yaml = { { "prettierd", "prettier" } },
 			},
