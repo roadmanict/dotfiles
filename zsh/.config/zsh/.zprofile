@@ -52,6 +52,7 @@ path=(
   $HOME/{,s}bin(N)
   $HOME/.local/{,s}bin(N)
   $HOME/.local/scripts
+  $HOME/.azure/bin
   /opt/{homebrew,local}/{,s}bin(N)
   /opt/homebrew/opt/gnu-sed/libexec/gnubin
   /opt/homebrew/opt/findutils/libexec/gnubin
