@@ -8,11 +8,10 @@ echo ""
 echo "Updating dotfiles submodules"
 git -C ~/Projects/Personal/dotfiles submodule update --init --recursive --rebase
 
-if [ "$DOTFILES_OS" = "Macos" ]; then
-    echo ""
-    echo "Updating homebrew"
-    brew update && brew upgrade
-fi
+echo ""
+echo "Updating homebrew"
+brew update && brew upgrade
+
 if [ "$DOTFILES_OS" = "Linux" ]; then
     echo ""
     echo "Updating apt"
