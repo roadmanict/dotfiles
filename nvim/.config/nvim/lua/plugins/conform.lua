@@ -18,15 +18,15 @@ return {
 		opts = {
 			-- Define your formatters
 			formatters_by_ft = {
-				html = { { "prettierd", "prettier" } },
-				javascript = { { "prettierd", "prettier" } },
-				json = { { "prettierd", "prettier" } },
+				html = { "prettierd" },
+				javascript = { "prettierd" },
+				json = { "prettierd" },
 				lua = { "stylua" },
-				markdown = { { "prettierd", "prettier" } },
+				markdown = { "prettierd" },
 				-- java       = { { "google-java-format" } },
 				toml = { "taplo" },
-				typescript = { { "prettierd", "prettier" } },
-				yaml = { { "prettierd", "prettier" } },
+				typescript = { "prettierd" },
+				yaml = { "prettierd" },
 			},
 			-- Set up format-on-save
 			format_on_save = { timeout_ms = 500, lsp_fallback = true },
