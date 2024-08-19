@@ -18,6 +18,7 @@ return {
 		opts = {
 			-- Define your formatters
 			formatters_by_ft = {
+				cs = { "csharpier" },
 				html = { "prettierd" },
 				javascript = { "prettierd" },
 				json = { "prettierd" },
@@ -34,6 +35,10 @@ return {
 			formatters = {
 				shfmt = {
 					prepend_args = { "-i", "2" },
+				},
+				csharpier = {
+					command = "dotnet-csharpier",
+					args = { "--write-stdout" },
 				},
 			},
 			notify_on_error = false,
