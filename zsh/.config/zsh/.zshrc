@@ -25,5 +25,7 @@ jdk 22 > /dev/null 2>&1
 
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+
 eval "$(fzf --zsh)"
 eval "$(hugo completion zsh)"
