@@ -25,7 +25,17 @@ jdk 22 > /dev/null 2>&1
 
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 
-export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+if type dotnet &>/dev/null; then
+    export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+fi
 
-eval "$(fzf --zsh)"
-eval "$(hugo completion zsh)"
+if type fzf &>/dev/null; then
+    eval "$(fzf --zsh)"
+fi
+if type brew &>/dev/null; then
+    eval "$(hugo completion zsh)"
+fi
+if type az &>/dev/null; then
+    autoload bashcompinit && bashcompinit
+    source $(brew --prefix)/etc/bash_completion.d/az
+fi
