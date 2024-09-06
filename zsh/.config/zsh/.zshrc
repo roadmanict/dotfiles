@@ -32,7 +32,7 @@ fi
 if type fzf &>/dev/null; then
     eval "$(fzf --zsh)"
 fi
-if type brew &>/dev/null; then
+if type hugo &>/dev/null; then
     eval "$(hugo completion zsh)"
 fi
 if type az &>/dev/null; then
