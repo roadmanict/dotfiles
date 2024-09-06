@@ -35,6 +35,7 @@ fi
 if type hugo &>/dev/null; then
     eval "$(hugo completion zsh)"
 fi
+# Azure completion
 if type az &>/dev/null; then
     autoload bashcompinit && bashcompinit
     source $(brew --prefix)/etc/bash_completion.d/az
