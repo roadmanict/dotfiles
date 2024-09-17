@@ -10,7 +10,7 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-if type cargo &>/dev/null; then
+if test -f "$HOME/.cargo/env"; then
     . "$HOME/.cargo/env"
 fi
 
