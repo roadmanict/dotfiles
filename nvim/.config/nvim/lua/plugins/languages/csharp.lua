@@ -1,6 +1,7 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+		cond = vim.env.DOTNET_ROOT ~= nil,
 		opts = function(_, opts)
 			opts.ensure_installed = opts.ensure_installed or {}
 			vim.list_extend(opts.ensure_installed, { "c_sharp" })
@@ -8,6 +9,7 @@ return {
 	},
 	{
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		cond = vim.env.DOTNET_ROOT ~= nil,
 		opts = function(_, opts)
 			opts.ensure_installed = opts.ensure_installed or {}
 			vim.list_extend(opts.ensure_installed, { "csharpier" })
@@ -15,6 +17,7 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		cond = vim.env.DOTNET_ROOT ~= nil,
 		opts = function(_, opts)
 			opts.ensure_installed = opts.ensure_installed or {}
 			vim.list_extend(opts.ensure_installed, { "omnisharp" })
@@ -22,6 +25,7 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
+		cond = vim.env.DOTNET_ROOT ~= nil,
 		opts = {
 			servers = {
 				omnisharp = {
