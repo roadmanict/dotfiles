@@ -25,3 +25,7 @@
 [submodule "i3/.config/i3/rose-pine"]
 	path = i3/.config/i3/rose-pine
 	url = git@github.com:rose-pine/i3.git
+[submodule "src/nvim"]
+	path = src/nvim
+	url = https://github.com/neovim/neovim.git
+	shallow = true
