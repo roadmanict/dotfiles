@@ -1,3 +1,4 @@
+import = ["~/.config/alacritty/rose-pine/dist/rose-pine-moon.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -12,5 +13,3 @@ family = "FiraCode Nerd Font Mono"
 startup_mode = "Maximized"
 option_as_alt = "Both"
 
-[general]
-import = ["~/.config/alacritty/rose-pine/dist/rose-pine-moon.toml"]
