@@ -3,7 +3,7 @@
 	url = git@github.com:roadmanict/ssh-config.git
 [submodule "alacritty/rose-pine"]
 	path = alacritty/.config/alacritty/rose-pine
-	url = git@github.com:rose-pine/alacritty.git
+	url = https://git::@github.com/rose-pine/alacritty.git
 [submodule "tmux/plugins/tmux"]
 	path = tmux/.config/tmux/plugins/tmux
 	url = https://git::@github.com/rose-pine/tmux
@@ -15,7 +15,7 @@
 	url = https://git::@github.com/tmux-plugins/tpm
 [submodule "zsh/.zprezto"]
 	path = zsh/.config/zsh/.zprezto
-	url = git@github.com:sorin-ionescu/prezto.git
+	url = https://git::@github.com/sorin-ionescu/prezto.git
 [submodule "wireguard"]
 	path = wireguard
 	url = git@github.com:roadmanict/wireguard-conf.git
@@ -24,7 +24,7 @@
 	url = git@github.com:roadmanict/transaction-parser-config.git
 [submodule "i3/.config/i3/rose-pine"]
 	path = i3/.config/i3/rose-pine
-	url = git@github.com:rose-pine/i3.git
+	url = https://git::@github.com/rose-pine/i3.git
 [submodule "src/nvim"]
 	path = src/nvim
 	url = https://github.com/neovim/neovim.git
