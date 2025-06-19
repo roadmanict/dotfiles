@@ -1,0 +1,4 @@
+#!/bin/sh
+directory="$1"
+: ${directory:=.}
+find $directory -type d -exec test -e '{}/.git' ';' -print -prune
