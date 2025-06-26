@@ -29,3 +29,6 @@
 	path = src/nvim
 	url = https://github.com/neovim/neovim.git
 	shallow = true
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/rose-pine"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/rose-pine
+	url = https://github.com/rose-pine/neovim.git
