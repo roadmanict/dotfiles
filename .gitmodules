@@ -32,3 +32,12 @@
 [submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/rose-pine"]
 	path = nvim-scm/.config/nvim-scm/pack/vendor/start/rose-pine
 	url = https://github.com/rose-pine/neovim.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-lspconfig"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/mason.nvim"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/mason.nvim
+	url = https://github.com/mason-org/mason.nvim.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/mason-lspconfig.nvim"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/mason-lspconfig.nvim
+	url = https://github.com/mason-org/mason-lspconfig.nvim.git
