@@ -41,3 +41,12 @@
 [submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/mason-lspconfig.nvim"]
 	path = nvim-scm/.config/nvim-scm/pack/vendor/start/mason-lspconfig.nvim
 	url = https://github.com/mason-org/mason-lspconfig.nvim.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-treesitter"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/telescope.nvim"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/plenary.nvim"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
