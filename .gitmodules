@@ -50,3 +50,6 @@
 [submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/plenary.nvim"]
 	path = nvim-scm/.config/nvim-scm/pack/vendor/start/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "nvm/.nvm"]
+	path = nvm/.config/nvm
+	url = https://github.com/nvm-sh/nvm.git
