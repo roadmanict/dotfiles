@@ -14,6 +14,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+nvm use default
+
 # Customize to your needs...
 function jdk {
     version=$1
