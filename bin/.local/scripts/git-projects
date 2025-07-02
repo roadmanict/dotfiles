@@ -1,4 +1,4 @@
 #!/bin/sh
 directory="$1"
 : ${directory:=.}
-find $directory -type d -exec test -e '{}/.git' ';' -print -prune
+find $directory -type d -exec test -e '{}/.git' ';' -print -prune -not -path "*/node_modules/*"
