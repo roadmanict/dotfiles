@@ -53,3 +53,9 @@
 [submodule "nvm/.nvm"]
 	path = nvm/.config/nvm
 	url = https://github.com/nvm-sh/nvm.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/conform.nvim"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/conform.nvim
+	url = https://github.com/stevearc/conform.nvim.git
+[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/blink.cmp"]
+	path = nvim-scm/.config/nvim-scm/pack/vendor/start/blink.cmp
+	url = https://github.com/Saghen/blink.cmp.git
