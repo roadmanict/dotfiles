@@ -13,3 +13,5 @@
 [includeIf "gitdir/i:~/Projects/NewNexus/"]
     path = ~/.config/git/config-newnexus.inc
 
+[includeIf "gitdir/i:~/Projects/DUO/"]
+    path = ~/.config/git/config-duo.inc
