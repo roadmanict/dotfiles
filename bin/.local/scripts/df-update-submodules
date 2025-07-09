@@ -1,2 +1,2 @@
 #!/bin/sh
-git -C ~/Projects/Personal/dotfiles submodule update --remote --recursive
+git -C ~/Projects/Personal/dotfiles submodule update --remote
