@@ -1,6 +1,6 @@
 
 [core]
-    sshCommand = "ssh -i ~/.ssh/id_25519"
+    sshCommand = "ssh -i ~/.ssh/id_ed25519"
 
 [user]
-    email = gweggemans@newnexus.nl
+    email = geert.weggemans@duo.nl
