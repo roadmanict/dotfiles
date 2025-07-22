@@ -29,36 +29,9 @@
 	path = src/nvim
 	url = https://github.com/neovim/neovim.git
 	shallow = true
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/rose-pine"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/rose-pine
-	url = https://github.com/rose-pine/neovim.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-lspconfig"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/mason.nvim"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/mason.nvim
-	url = https://github.com/mason-org/mason.nvim.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/mason-lspconfig.nvim"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/mason-lspconfig.nvim
-	url = https://github.com/mason-org/mason-lspconfig.nvim.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-treesitter"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/telescope.nvim"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/telescope.nvim
-	url = https://github.com/nvim-telescope/telescope.nvim.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/plenary.nvim"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/plenary.nvim
-	url = https://github.com/nvim-lua/plenary.nvim.git
 [submodule "nvm/.nvm"]
 	path = nvm/.config/nvm
 	url = https://github.com/nvm-sh/nvm.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/conform.nvim"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/conform.nvim
-	url = https://github.com/stevearc/conform.nvim.git
-[submodule "nvim-scm/.config/nvim-scm/pack/vendor/start/blink.cmp"]
-	path = nvim-scm/.config/nvim-scm/pack/vendor/start/blink.cmp
-	url = https://github.com/Saghen/blink.cmp.git
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = ssh://git@10.100.100.92/geert/nvim.git
