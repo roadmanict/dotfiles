@@ -14,6 +14,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Load DUO int root CA for nodejs
+if [[ -s "$HOME/INT-ROOTCA.pem" ]]; then
+    export NODE_EXTRA_CA_CERTS=$HOME/INT-ROOTCA.pem
+fi
+
 nvm use default
 
 # Customize to your needs...
